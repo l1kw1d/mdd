@@ -352,7 +352,6 @@ Améliorations suggérées par ordre de priorité business :
 | Adresse | Saint-Stanislas-de-Kostka, QC |
 | Facebook | [maconneriedaviddeschambault.inc](https://www.facebook.com/maconneriedaviddeschambault.inc) |
 | RBQ | [5667-9582-01](https://www.rbq.gouv.qc.ca) |
-| Politique de confidentialité | [privacy.maconneriemdd.com](https://privacy.maconneriemdd.com) |
 
 ---
 
