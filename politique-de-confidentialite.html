@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1c2025" />
+
+  <title>Politique de confidentialité | Maçonnerie David Deschambault Inc.</title>
+  <meta name="description" content="Politique de confidentialité de Maçonnerie David Deschambault Inc., conforme à la Loi 25 du Québec." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://maconneriemdd.com/politique-de-confidentialite.html" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%231c2025%22/><text x=%2250%22 y=%2272%22 font-size=%2270%22 font-family=%22Georgia%22 fill=%22%23c45a3a%22 text-anchor=%22middle%22 font-weight=%22700%22>D</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,30..100,0..1&amp;family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --mortar: #ecede9;
+      --mortar-soft: #e0e1dc;
+      --lime: #f4f5f1;
+      --stone-cool: #b8b9b3;
+      --concrete: #6e7176;
+      --steel: #4a4e54;
+      --clay: #c45a3a;
+      --clay-deep: #8e3d24;
+      --clay-glow: #d97249;
+      --graphite: #1c2025;
+      --graphite-deep: #12161a;
+      --char: #2a2e34;
+      --line: rgba(28, 32, 37, 0.12);
+      --line-strong: rgba(28, 32, 37, 0.22);
+      --line-light: rgba(236, 237, 233, 0.14);
+      --serif: 'Fraunces', 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      --max-w: 880px;
+      --gutter: clamp(1.25rem, 4vw, 3rem);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    *::selection { background: var(--clay); color: var(--lime); }
+
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+    body {
+      font-family: var(--sans);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--char);
+      background: var(--mortar);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.5;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      mix-blend-mode: multiply;
+    }
+
+    a { color: var(--clay-deep); text-decoration: underline; text-underline-offset: 3px; transition: color 0.3s var(--ease); }
+    a:hover { color: var(--clay); }
+
+    /* Nav minimaliste */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(236, 237, 233, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+      padding: 1rem var(--gutter);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .nav__back {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--char);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0;
+      transition: color 0.3s var(--ease), gap 0.3s var(--ease);
+    }
+    .nav__back:hover {
+      color: var(--clay-deep);
+      gap: 0.7rem;
+    }
+    .nav__back svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    /* Page layout */
+    .page {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: clamp(3rem, 8vh, 5rem) var(--gutter) clamp(4rem, 10vh, 7rem);
+      position: relative;
+      z-index: 2;
+    }
+
+    .page__eyebrow {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--clay-deep);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+    .page__eyebrow::before {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: var(--clay);
+    }
+
+    .page__title {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: clamp(2.5rem, 6vw, 4.2rem);
+      line-height: 1.02;
+      letter-spacing: -0.025em;
+      color: var(--graphite);
+      margin-bottom: 1rem;
+      font-variation-settings: "opsz" 144, "SOFT" 30;
+    }
+    .page__title em {
+      font-style: italic;
+      color: var(--clay-deep);
+      font-weight: 300;
+    }
+
+    .page__updated {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      color: var(--steel);
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    /* Sections */
+    .page section {
+      margin-bottom: 3rem;
+    }
+    .page h2 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+      line-height: 1.2;
+      letter-spacing: -0.015em;
+      color: var(--graphite);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.85rem;
+    }
+    .page h2::before {
+      content: counter(section-counter, decimal-leading-zero);
+      counter-increment: section-counter;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--clay-deep);
+      letter-spacing: 0.05em;
+    }
+    .page { counter-reset: section-counter; }
+
+    .page h3 {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--graphite);
+      margin: 1.5rem 0 0.75rem;
+      letter-spacing: -0.005em;
+    }
+
+    .page p {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--char);
+      margin-bottom: 1rem;
+      max-width: 68ch;
+    }
+
+    .page strong { color: var(--graphite); font-weight: 600; }
+
+    .page ul {
+      list-style: none;
+      margin: 1rem 0;
+      padding-left: 0;
+    }
+    .page ul li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.65;
+      max-width: 68ch;
+    }
+    .page ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.7em;
+      width: 6px;
+      height: 6px;
+      background: var(--clay);
+    }
+
+    /* Cookie table */
+    .cookie-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.92rem;
+      background: var(--lime);
+      border: 1px solid var(--line);
+    }
+    .cookie-table thead {
+      background: var(--mortar-soft);
+    }
+    .cookie-table th {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--steel);
+      text-align: left;
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .cookie-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      color: var(--char);
+    }
+    .cookie-table tr:last-child td { border-bottom: none; }
+    .cookie-table code {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: var(--clay-deep);
+      background: var(--mortar);
+      padding: 0.15rem 0.4rem;
+      border-radius: 2px;
+    }
+
+    /* Manage cookies button */
+    .btn-manage {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.85rem 1.4rem;
+      background: var(--graphite);
+      color: var(--lime);
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 100px;
+      border: 1px solid var(--graphite);
+      cursor: pointer;
+      transition: all 0.4s var(--ease);
+      margin: 1rem 0;
+    }
+    .btn-manage:hover {
+      background: var(--clay);
+      border-color: var(--clay);
+      color: var(--lime);
+      transform: translateY(-1px);
+    }
+    .btn-manage svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    /* Contact card */
+    .contact-card {
+      background: var(--lime);
+      border: 1px solid var(--line);
+      padding: 2rem;
+      margin-top: 1.5rem;
+    }
+    .contact-card strong {
+      display: block;
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: var(--graphite);
+      margin-bottom: 0.5rem;
+    }
+    .contact-card p { margin-bottom: 0.4rem; }
+
+    /* Footer minimaliste */
+    .footer {
+      background: var(--graphite-deep);
+      color: var(--stone-cool);
+      padding: 2.5rem var(--gutter);
+      text-align: center;
+      font-size: 0.85rem;
+      position: relative;
+      z-index: 2;
+    }
+    .footer a { color: var(--stone-cool); }
+    .footer a:hover { color: var(--clay-glow); }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="/" class="nav__back">
+      <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Retour au site
+    </a>
+  </nav>
+
+  <main class="page">
+
+    <p class="page__eyebrow">Loi 25 du Québec</p>
+    <h1 class="page__title">Politique de <em>confidentialité</em></h1>
+    <p class="page__updated">Dernière mise à jour : avril 2026</p>
+
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        Maçonnerie David Deschambault Inc. (ci-après « nous ») s'engage à protéger les renseignements personnels de ses clients et visiteurs, conformément à la <strong>Loi modernisant des dispositions législatives en matière de protection des renseignements personnels</strong> (L.Q. 2021, c. 25, ci-après « Loi 25 ») du Québec.
+      </p>
+      <p>
+        La présente politique décrit quels renseignements nous recueillons, pourquoi nous les recueillons, comment nous les utilisons, et les droits dont vous disposez à leur égard.
+      </p>
+    </section>
+
+    <section>
+      <h2>Responsable de la protection des renseignements personnels</h2>
+      <p>
+        Conformément à la Loi 25, nous avons désigné un responsable de la protection des renseignements personnels :
+      </p>
+      <div class="contact-card">
+        <strong>Jonathan Provost</strong>
+        <p>Responsable de la protection des renseignements personnels</p>
+        <p>Courriel : <a href="mailto:security@bunkers.co">security@bunkers.co</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Renseignements personnels recueillis</h2>
+
+      <h3>3.1 Demandes d'estimation par courriel</h3>
+      <p>
+        Lorsque vous nous contactez via le formulaire de contact du site (qui ouvre votre client courriel) ou directement par courriel à <code>info@maconneriemdd.com</code>, vous nous transmettez volontairement les renseignements que vous incluez dans votre message. Cela peut comprendre :
+      </p>
+      <ul>
+        <li>Prénom et nom</li>
+        <li>Adresse courriel</li>
+        <li>Numéro de téléphone</li>
+        <li>Adresse du chantier</li>
+        <li>Description de votre projet</li>
+      </ul>
+      <p>
+        <strong>Finalité</strong> : ces renseignements servent uniquement à répondre à votre demande, vous fournir une estimation, et planifier la visite ou les travaux. Ils ne sont pas utilisés à des fins de marketing, sauf consentement exprès de votre part.
+      </p>
+
+      <h3>3.2 Données de navigation (Google Analytics)</h3>
+      <p>
+        Avec votre consentement, notre site utilise Google Analytics 4, un service d'analyse Web fourni par Google LLC. Les données recueillies comprennent :
+      </p>
+      <ul>
+        <li>Pages consultées et durée des visites</li>
+        <li>Source de la visite (moteur de recherche, lien direct, etc.)</li>
+        <li>Type d'appareil, navigateur et système d'exploitation</li>
+        <li>Localisation approximative (ville et région)</li>
+        <li>Adresse IP (anonymisée)</li>
+      </ul>
+      <p>
+        <strong>Important</strong> : aucun témoin d'analyse n'est déposé sur votre appareil avant votre consentement explicite via notre bannière. Si vous refusez, aucune donnée n'est transmise à Google. Le mécanisme Google Consent Mode v2 garantit que les paramètres de consentement sont respectés à la source.
+      </p>
+    </section>
+
+    <section>
+      <h2>Témoins de connexion (cookies)</h2>
+      <p>Notre site utilise les témoins suivants :</p>
+
+      <table class="cookie-table">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Catégorie</th>
+            <th>Finalité</th>
+            <th>Durée</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>cc_cookie_mdd</code></td>
+            <td>Essentiel</td>
+            <td>Enregistre vos choix de consentement aux témoins.</td>
+            <td>6 mois</td>
+          </tr>
+          <tr>
+            <td><code>_ga</code></td>
+            <td>Analyse</td>
+            <td>Identifiant anonyme, Google Analytics.</td>
+            <td>2 ans</td>
+          </tr>
+          <tr>
+            <td><code>_ga_*</code></td>
+            <td>Analyse</td>
+            <td>Identifiant de session, Google Analytics 4.</td>
+            <td>2 ans</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Vous pouvez modifier vos préférences en tout temps :</p>
+
+      <button type="button" class="btn-manage" id="cookieSettingsBtn">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        Gérer mes préférences de témoins
+      </button>
+
+      <p>
+        Vous pouvez également désactiver Google Analytics directement via le <a href="https://tools.google.com/dlpage/gaoptout?hl=fr" target="_blank" rel="noopener">module complémentaire de navigateur de Google</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Utilisation et conservation</h2>
+      <p>
+        Vos renseignements sont utilisés exclusivement aux fins pour lesquelles ils ont été recueillis. Nous ne vendons, ne louons ni ne partageons vos données avec des tiers à des fins commerciales.
+      </p>
+      <p>
+        Les renseignements transmis lors d'une demande d'estimation sont conservés pour la durée nécessaire au traitement de votre demande, à l'exécution des travaux le cas échéant, et au respect de nos obligations légales (notamment fiscales). Ils sont ensuite détruits ou anonymisés. Les données Google Analytics sont conservées 14 mois, puis automatiquement supprimées par Google.
+      </p>
+    </section>
+
+    <section>
+      <h2>Localisation et transmission des données</h2>
+
+      <h3>6.1 Hébergement du site</h3>
+      <p>
+        Ce site est hébergé par <strong>Vercel Inc.</strong> (San Francisco, États-Unis). Les pages sont servies via un réseau de diffusion de contenu (CDN) mondial, ce qui signifie que les fichiers statiques du site peuvent transiter par des serveurs situés hors du Canada. Aucune donnée personnelle n'est stockée par Vercel dans le cadre de l'hébergement de ce site.
+      </p>
+
+      <h3>6.2 Google Analytics</h3>
+      <p>
+        Les données recueillies par Google Analytics sont transmises vers les serveurs de Google, qui peuvent être situés aux États-Unis ou dans d'autres pays. Ce transfert n'a lieu que si vous avez consenti aux témoins d'analyse. Google applique des mesures de protection incluant le chiffrement en transit et au repos, ainsi que l'anonymisation des adresses IP.
+      </p>
+
+      <h3>6.3 Courriel</h3>
+      <p>
+        Lorsque vous nous écrivez à <code>info@maconneriemdd.com</code>, vos messages transitent par les serveurs de notre fournisseur de courriel et peuvent être conservés selon nos politiques internes de gestion documentaire et nos obligations légales.
+      </p>
+    </section>
+
+    <section>
+      <h2>Mesures de sécurité</h2>
+      <p>
+        Nous mettons en œuvre des mesures techniques et organisationnelles raisonnables pour protéger vos renseignements personnels contre l'accès non autorisé, la perte, la modification ou la divulgation. Ces mesures comprennent :
+      </p>
+      <ul>
+        <li><strong>Chiffrement SSL/TLS</strong> : toutes les communications entre votre navigateur et notre site sont chiffrées via HTTPS.</li>
+        <li><strong>Contrôle d'accès</strong> : l'accès aux courriels et aux dossiers clients est restreint aux personnes autorisées de l'entreprise.</li>
+        <li><strong>Consentement préalable</strong> : aucun témoin d'analyse n'est déposé sans votre autorisation explicite (Google Consent Mode v2).</li>
+        <li><strong>Minimisation des données</strong> : nous ne recueillons que les renseignements strictement nécessaires aux finalités décrites.</li>
+        <li><strong>Hébergement sécurisé</strong> : notre site est hébergé sur une infrastructure avec certificats SSL automatiques et protection DDoS.</li>
+      </ul>
+      <p>
+        Aucun système n'est infaillible. Malgré nos efforts, nous ne pouvons garantir une sécurité absolue. En cas d'incident, nous agirons conformément à la section ci-dessous.
+      </p>
+    </section>
+
+    <section>
+      <h2>Vos droits</h2>
+      <p>Conformément à la Loi 25, vous disposez des droits suivants :</p>
+      <ul>
+        <li><strong>Accès</strong> : demander quels renseignements personnels nous détenons à votre sujet.</li>
+        <li><strong>Rectification</strong> : demander la correction de renseignements inexacts ou incomplets.</li>
+        <li><strong>Suppression</strong> : demander l'effacement de vos données lorsque la finalité de la collecte est atteinte.</li>
+        <li><strong>Retrait du consentement</strong> : retirer votre consentement aux témoins d'analyse en tout temps via la bannière ou le lien dans le pied de page.</li>
+        <li><strong>Portabilité</strong> : recevoir vos données dans un format structuré et couramment utilisé.</li>
+        <li><strong>Plainte</strong> : déposer une plainte auprès de la <a href="https://www.cai.gouv.qc.ca/" target="_blank" rel="noopener">Commission d'accès à l'information du Québec (CAI)</a>.</li>
+      </ul>
+      <p>
+        Pour exercer vos droits : <a href="mailto:security@bunkers.co">security@bunkers.co</a>. Nous traiterons votre demande dans un délai de 30 jours suivant la réception.
+      </p>
+    </section>
+
+    <section>
+      <h2>Incident de confidentialité</h2>
+      <p>
+        En cas d'incident de confidentialité impliquant vos renseignements personnels et susceptible de causer un préjudice sérieux, nous nous engageons à :
+      </p>
+      <ul>
+        <li>Prendre les mesures nécessaires pour réduire le risque de préjudice.</li>
+        <li>Aviser la <strong>Commission d'accès à l'information du Québec</strong> dans les meilleurs délais.</li>
+        <li>Aviser les personnes concernées avec une description de l'incident, les renseignements touchés, et les mesures prises.</li>
+        <li>Consigner l'incident dans un registre, conformément aux exigences de la Loi 25.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Modifications à cette politique</h2>
+      <p>
+        Nous pouvons mettre à jour cette politique pour refléter des changements dans nos pratiques ou la réglementation applicable. La date de la dernière mise à jour est indiquée en haut de cette page. En cas de modification substantielle, nous en informerons les utilisateurs par un avis visible sur le site.
+      </p>
+    </section>
+
+    <section>
+      <h2>Nous joindre</h2>
+      <div class="contact-card">
+        <strong>Maçonnerie David Deschambault Inc.</strong>
+        <p>Saint-Stanislas-de-Kostka, Québec</p>
+        <p>Téléphone : <a href="tel:+14502681610">450 268-1610</a></p>
+        <p>Responsable vie privée : Jonathan Provost</p>
+        <p>Courriel : <a href="mailto:security@bunkers.co">security@bunkers.co</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    © <span id="year">2026</span> Maçonnerie David Deschambault Inc. · RBQ 5667-9582-01 · <a href="/">Retour à l'accueil</a>
+  </footer>
+
+  <!-- Google Consent Mode v2 et CookieConsent (mêmes scripts que la page principale) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'functionality_storage': 'granted',
+      'security_storage': 'granted',
+      'wait_for_update': 500
+    });
+    gtag('set', 'ads_data_redaction', true);
+    gtag('set', 'url_passthrough', false);
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-962NF2YKSP"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-962NF2YKSP', { 'anonymize_ip': true });
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css" />
+  <script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js"></script>
+
+  <style>
+    #cc-main {
+      --cc-bg: #f4f5f1;
+      --cc-primary-color: #1c2025;
+      --cc-secondary-color: #4a4e54;
+      --cc-btn-primary-bg: #c45a3a;
+      --cc-btn-primary-color: #f4f5f1;
+      --cc-btn-primary-hover-bg: #8e3d24;
+      --cc-btn-primary-hover-color: #f4f5f1;
+      --cc-btn-secondary-bg: #ecede9;
+      --cc-btn-secondary-color: #1c2025;
+      --cc-btn-secondary-hover-bg: #e0e1dc;
+      --cc-btn-secondary-hover-color: #1c2025;
+      --cc-separator-border-color: rgba(28, 32, 37, 0.12);
+      --cc-cookie-category-block-bg: #ecede9;
+      --cc-cookie-category-block-border: rgba(28, 32, 37, 0.12);
+      --cc-cookie-category-block-hover-bg: #e0e1dc;
+      --cc-cookie-category-block-hover-border: rgba(196, 90, 58, 0.4);
+      --cc-cookie-category-expanded-block-hover-bg: #e0e1dc;
+      --cc-cookie-category-expanded-block-bg: #ecede9;
+      --cc-toggle-on-bg: #c45a3a;
+      --cc-toggle-off-bg: #b8b9b3;
+      --cc-toggle-readonly-bg: #6e7176;
+      --cc-toggle-on-knob-bg: #f4f5f1;
+      --cc-toggle-readonly-knob-bg: #ecede9;
+      --cc-overlay-bg: rgba(28, 32, 37, 0.65);
+      --cc-footer-bg: #ecede9;
+      --cc-footer-border-color: rgba(28, 32, 37, 0.12);
+    }
+    #cc-main .pm__title, #cc-main .cm__title {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+    }
+    #cc-main .pm__section-title { font-family: 'Fraunces', Georgia, serif; font-weight: 500; }
+    #cc-main a { color: #8e3d24; text-decoration: underline; }
+    #cc-main a:hover { color: #c45a3a; }
+  </style>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    window.addEventListener('load', function() {
+      if (typeof CookieConsent === 'undefined') return;
+
+      CookieConsent.run({
+        cookie: { name: 'cc_cookie_mdd', expiresAfterDays: 182 },
+        guiOptions: {
+          consentModal: { layout: 'box inline', position: 'bottom right', equalWeightButtons: true, flipButtons: false },
+          preferencesModal: { layout: 'box', position: 'right', equalWeightButtons: true, flipButtons: false }
+        },
+        onFirstConsent: updateGtagConsent,
+        onConsent: updateGtagConsent,
+        onChange: updateGtagConsent,
+        categories: {
+          necessary: { enabled: true, readOnly: true },
+          analytics: { enabled: false, autoClear: { cookies: [{ name: /^_ga/ }, { name: '_gid' }] } }
+        },
+        language: {
+          default: 'fr',
+          translations: {
+            fr: {
+              consentModal: {
+                title: 'Témoins de connexion',
+                description: 'Nous utilisons des témoins (cookies) pour comprendre comment notre site est consulté et améliorer nos services. Aucun témoin d\'analyse n\'est déposé sans votre consentement explicite. <a href="/politique-de-confidentialite.html">En savoir plus</a>',
+                acceptAllBtn: 'Tout accepter',
+                acceptNecessaryBtn: 'Tout refuser',
+                showPreferencesBtn: 'Gérer mes préférences'
+              },
+              preferencesModal: {
+                title: 'Gérer vos préférences de témoins',
+                acceptAllBtn: 'Tout accepter',
+                acceptNecessaryBtn: 'Tout refuser',
+                savePreferencesBtn: 'Enregistrer mes préférences',
+                closeIconLabel: 'Fermer',
+                sections: [
+                  { title: 'Vos choix', description: 'Conformément à la Loi 25 du Québec, vous pouvez accepter ou refuser les témoins non essentiels. Vous pouvez modifier vos préférences en tout temps.' },
+                  {
+                    title: 'Témoins strictement nécessaires',
+                    description: 'Ces témoins sont indispensables au bon fonctionnement du site. Ils enregistrent notamment vos choix de consentement.',
+                    linkedCategory: 'necessary',
+                    cookieTable: {
+                      headers: { name: 'Nom', domain: 'Domaine', desc: 'Description' },
+                      body: [{ name: 'cc_cookie_mdd', domain: 'maconneriemdd.com', desc: 'Enregistre vos choix de consentement (durée : 6 mois).' }]
+                    }
+                  },
+                  {
+                    title: 'Témoins d\'analyse',
+                    description: 'Ces témoins (Google Analytics) nous permettent de comprendre comment les visiteurs interagissent avec le site, de manière anonyme et agrégée. Aucune donnée n\'est transmise sans votre consentement.',
+                    linkedCategory: 'analytics',
+                    cookieTable: {
+                      headers: { name: 'Nom', domain: 'Domaine', desc: 'Description' },
+                      body: [
+                        { name: '_ga', domain: 'maconneriemdd.com', desc: 'Identifiant anonyme, Google Analytics (durée : 2 ans).' },
+                        { name: '_ga_*', domain: 'maconneriemdd.com', desc: 'Identifiant de session, Google Analytics 4 (durée : 2 ans).' }
+                      ]
+                    }
+                  },
+                  { title: 'Pour aller plus loin', description: 'Pour plus de détails sur la collecte et l\'utilisation de vos données, consultez notre <a href="/politique-de-confidentialite.html">politique de confidentialité</a>.' }
+                ]
+              }
+            }
+          }
+        }
+      });
+
+      function updateGtagConsent() {
+        const analyticsConsent = CookieConsent.acceptedCategory('analytics');
+        gtag('consent', 'update', { 'analytics_storage': analyticsConsent ? 'granted' : 'denied' });
+      }
+
+      const btn = document.getElementById('cookieSettingsBtn');
+      if (btn) btn.addEventListener('click', function() { CookieConsent.showPreferences(); });
+    });
+  </script>
+
+</body>
+</html>
