@@ -1,9 +1,55 @@
+
 <!DOCTYPE html>
 <html lang="fr-CA">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1a1815" />
+
+  <!-- ========================================================
+       Google Consent Mode v2, défaut "denied" (Loi 25)
+       Le consentement explicite est requis avant toute collecte.
+       ======================================================== -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'functionality_storage': 'granted',
+      'security_storage': 'granted',
+      'wait_for_update': 500
+    });
+    gtag('set', 'ads_data_redaction', true);
+    gtag('set', 'url_passthrough', false);
+  </script>
+
+  <!-- ========================================================
+       Google Analytics 4
+       Le tag est chargé en permanence, mais le Consent Mode v2
+       contrôle ce qui est réellement transmis à Google.
+       ======================================================== -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-962NF2YKSP"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-962NF2YKSP', {
+      'anonymize_ip': true
+    });
+  </script>
+
+  <!-- ========================================================
+       CookieConsent v3 (Orest Bida)
+       Bibliothèque MIT, conforme RGPD et Loi 25.
+       ======================================================== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css" />
+  <script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js"></script>
+
+  <!-- ========================================================
+       SEO PRIMAIRE, optimisé pour les requêtes haute intention
+       en Suroît, Vaudreuil-Soulanges et Montérégie
+       ======================================================== -->
   <title>Maçon Suroît &amp; Montérégie | Rejointoiement, Brique, Pierre | Maçonnerie David Deschambault Inc.</title>
   <meta name="description" content="Briqueteur-maçon basé à Saint-Stanislas-de-Kostka. Au service du Suroît, Vaudreuil-Soulanges et de la Montérégie depuis 2000. Rejointoiement, réparation de brique, pose de pierre, cheminées, restauration patrimoniale. RBQ 5667-9582-01. Estimation gratuite." />
   <meta name="keywords" content="maçon Suroît, maçon Vaudreuil-Soulanges, maçon Beauharnois-Salaberry, maçon Montérégie, briqueteur maçon, rejointoiement, rejointage, repointage, réparation brique, ventre de bœuf, allèges linteaux, cheminée, foyer, pose de pierre, restauration patrimoniale, Saint-Stanislas-de-Kostka, Salaberry-de-Valleyfield, Beauharnois, Châteauguay, Vaudreuil-Dorion, Coteau-du-Lac, Huntingdon, Ormstown" />
@@ -21,13 +67,13 @@
   <meta property="og:description" content="Briqueteur-maçon basé à Saint-Stanislas-de-Kostka depuis 2000. Rejointoiement, brique, pierre, cheminées, restauration patrimoniale. RBQ 5667-9582-01. Estimation gratuite." />
   <meta property="og:url" content="https://maconneriemdd.com/" />
   <meta property="og:site_name" content="Maçonnerie David Deschambault Inc." />
-  <meta property="og:image" content="https://maconneriemdd.com/images/image01.jpg" />
+  <meta property="og:image" content="https://maconneriemdd.com/assets/images/image01.jpg" />
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Maçon Suroît &amp; Montérégie | Maçonnerie David Deschambault Inc." />
   <meta name="twitter:description" content="Briqueteur-maçon basé à Saint-Stanislas-de-Kostka depuis 2000. Rejointoiement, brique, pierre, restauration patrimoniale. RBQ 5667-9582-01." />
-  <meta name="twitter:image" content="https://maconneriemdd.com/images/image01.jpg" />
+  <meta name="twitter:image" content="https://maconneriemdd.com/assets/images/image01.jpg" />
 
   <!-- Favicon SVG (palette mortier/argile) -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23161a1f%22/><text x=%2250%22 y=%2272%22 font-size=%2270%22 font-family=%22Georgia%22 fill=%22%23c45a3a%22 text-anchor=%22middle%22 font-weight=%22700%22>D</text></svg>" />
@@ -54,8 +100,8 @@
         "url": "https://maconneriemdd.com",
         "telephone": "+14502681610",
         "email": "info@maconneriemdd.com",
-        "image": "https://maconneriemdd.com/images/image01.jpg",
-        "logo": "https://maconneriemdd.com/images/image05.jpg",
+        "image": "https://maconneriemdd.com/assets/images/image01.jpg",
+        "logo": "https://maconneriemdd.com/assets/images/image05.jpg",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Saint-Stanislas-de-Kostka",
@@ -250,6 +296,56 @@
 
     html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
+    /* ======================================================
+       COOKIECONSENT v3 (Orest Bida), palette MDD
+       Override des variables --cc-* pour matcher mortier/argile/graphite
+       ====================================================== */
+    #cc-main {
+      --cc-bg: #f4f5f1;
+      --cc-primary-color: #1c2025;
+      --cc-secondary-color: #4a4e54;
+      --cc-btn-primary-bg: #c45a3a;
+      --cc-btn-primary-color: #f4f5f1;
+      --cc-btn-primary-hover-bg: #8e3d24;
+      --cc-btn-primary-hover-color: #f4f5f1;
+      --cc-btn-secondary-bg: #ecede9;
+      --cc-btn-secondary-color: #1c2025;
+      --cc-btn-secondary-hover-bg: #e0e1dc;
+      --cc-btn-secondary-hover-color: #1c2025;
+      --cc-separator-border-color: rgba(28, 32, 37, 0.12);
+      --cc-cookie-category-block-bg: #ecede9;
+      --cc-cookie-category-block-border: rgba(28, 32, 37, 0.12);
+      --cc-cookie-category-block-hover-bg: #e0e1dc;
+      --cc-cookie-category-block-hover-border: rgba(196, 90, 58, 0.4);
+      --cc-cookie-category-expanded-block-hover-bg: #e0e1dc;
+      --cc-cookie-category-expanded-block-bg: #ecede9;
+      --cc-toggle-on-bg: #c45a3a;
+      --cc-toggle-off-bg: #b8b9b3;
+      --cc-toggle-readonly-bg: #6e7176;
+      --cc-toggle-on-knob-bg: #f4f5f1;
+      --cc-toggle-readonly-knob-bg: #ecede9;
+      --cc-overlay-bg: rgba(28, 32, 37, 0.65);
+      --cc-footer-bg: #ecede9;
+      --cc-footer-border-color: rgba(28, 32, 37, 0.12);
+    }
+    #cc-main .pm__title,
+    #cc-main .cm__title {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+    }
+    #cc-main .pm__section-title {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 500;
+    }
+    #cc-main a {
+      color: #8e3d24;
+      text-decoration: underline;
+    }
+    #cc-main a:hover {
+      color: #c45a3a;
+    }
+
     body {
       font-family: var(--sans);
       font-weight: 400;
@@ -307,38 +403,50 @@
     .nav__brand {
       font-family: var(--serif);
       font-weight: 500;
-      font-size: clamp(1rem, 2vw, 1.15rem);
+      font-size: clamp(0.95rem, 1.6vw, 1.05rem);
       letter-spacing: 0.01em;
       display: flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 0.7rem;
+      text-decoration: none;
+      color: var(--graphite);
     }
     .nav__brand-mark {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
+      font-family: var(--sans);
+      font-weight: 800;
+      font-size: 0.85rem;
+      letter-spacing: -0.06em;
+      color: var(--lime);
       background: var(--graphite);
-      color: var(--clay);
-      display: grid;
-      place-items: center;
-      font-family: var(--serif);
-      font-weight: 600;
-      font-size: 1rem;
+      padding: 0.4rem 0.55rem;
+      line-height: 1;
       flex-shrink: 0;
+      border-left: 3px solid var(--clay);
+      transition: all 0.4s var(--ease);
+    }
+    .nav__brand:hover .nav__brand-mark {
+      background: var(--clay);
+      border-left-color: var(--graphite);
     }
     .nav__brand-text {
       display: flex;
       flex-direction: column;
-      line-height: 1.05;
+      line-height: 1.1;
+      font-size: 0.92rem;
     }
     .nav__brand-text small {
-      font-family: var(--sans);
-      font-size: 0.65rem;
-      font-weight: 400;
-      letter-spacing: 0.18em;
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--clay-deep);
-      margin-top: 2px;
+      margin-top: 3px;
+    }
+    @media (max-width: 640px) {
+      .nav__brand-text {
+        display: none;
+      }
     }
 
     .nav__menu {
@@ -1952,10 +2060,10 @@
        ========================================================= -->
   <nav class="nav" id="nav">
     <a href="#" class="nav__brand" aria-label="Maçonnerie David Deschambault, accueil">
-      <span class="nav__brand-mark">D</span>
+      <span class="nav__brand-mark" aria-hidden="true">MDD</span>
       <span class="nav__brand-text">
-        Deschambault
-        <small>Maçonnerie · Est. 2000</small>
+        Maçonnerie David Deschambault
+        <small>Inc. · Est. 2000</small>
       </span>
     </a>
     <div class="nav__menu" id="navMenu">
@@ -2109,7 +2217,7 @@
        ========================================================= -->
   <section class="section about reveal" id="expertise">
     <div class="about__visual">
-      <img src="https://maconneriemdd.com/images/image01.jpg?v=c73ed17f" alt="David Deschambault au travail sur un mur de brique" loading="lazy" />
+      <img src="https://maconneriemdd.com/assets/images/image01.jpg?v=c73ed17f" alt="David Deschambault au travail sur un mur de brique" loading="lazy" />
       <div class="about__badge">
         <span>Licence&nbsp;RBQ</span>
         <strong>5667-9582-01</strong>
@@ -2288,42 +2396,42 @@
 
       <div class="portfolio__grid reveal">
         <a class="pf-item pf-1" href="#contact" aria-label="Voir le projet de mur en brique">
-          <img src="https://maconneriemdd.com/images/6dec6dc9.jpg?v=c73ed17f" alt="Mur en brique restauré" loading="lazy" />
+          <img src="https://maconneriemdd.com/assets/images/gallery01/6dec6dc9.jpg?v=c73ed17f" alt="Mur en brique restauré" loading="lazy" />
           <div class="pf-item__caption">
             <span class="pf-item__cat">Résidentiel</span>
             <span class="pf-item__title">Façade complète en brique d'argile</span>
           </div>
         </a>
         <a class="pf-item pf-2" href="#contact" aria-label="Voir le projet">
-          <img src="https://maconneriemdd.com/images/2d42e6ca.jpg?v=c73ed17f" alt="Détail de maçonnerie" loading="lazy" />
+          <img src="https://maconneriemdd.com/assets/images/gallery01/2d42e6ca.jpg?v=c73ed17f" alt="Détail de maçonnerie" loading="lazy" />
           <div class="pf-item__caption">
             <span class="pf-item__cat">Patrimonial</span>
             <span class="pf-item__title">Restauration au mortier de chaux</span>
           </div>
         </a>
         <a class="pf-item pf-3" href="#contact" aria-label="Voir le projet">
-          <img src="https://maconneriemdd.com/images/f0c4801d.jpg?v=c73ed17f" alt="Mur de pierre" loading="lazy" />
+          <img src="https://maconneriemdd.com/assets/images/gallery01/f0c4801d.jpg?v=c73ed17f" alt="Mur de pierre" loading="lazy" />
           <div class="pf-item__caption">
             <span class="pf-item__cat">Aménagement extérieur</span>
             <span class="pf-item__title">Mur en pierre naturelle</span>
           </div>
         </a>
         <a class="pf-item pf-4" href="#contact" aria-label="Voir le projet">
-          <img src="https://maconneriemdd.com/images/a592531d.jpg?v=c73ed17f" alt="Cheminée en brique" loading="lazy" />
+          <img src="https://maconneriemdd.com/assets/images/gallery01/a592531d.jpg?v=c73ed17f" alt="Cheminée en brique" loading="lazy" />
           <div class="pf-item__caption">
             <span class="pf-item__cat">Foyers &amp; cheminées</span>
             <span class="pf-item__title">Reconstruction de cheminée</span>
           </div>
         </a>
         <a class="pf-item pf-5" href="#contact" aria-label="Voir le projet">
-          <img src="https://maconneriemdd.com/images/5f9f5099.jpg?v=c73ed17f" alt="Détail de joints" loading="lazy" />
+          <img src="https://maconneriemdd.com/assets/images/gallery01/5f9f5099.jpg?v=c73ed17f" alt="Détail de joints" loading="lazy" />
           <div class="pf-item__caption">
             <span class="pf-item__cat">Repointage</span>
             <span class="pf-item__title">Joints d'origine restaurés</span>
           </div>
         </a>
         <a class="pf-item pf-6" href="#contact" aria-label="Voir le projet">
-          <img src="https://maconneriemdd.com/images/image02.jpg?v=c73ed17f" alt="Construction neuve" loading="lazy" />
+          <img src="https://maconneriemdd.com/assets/images/image02.jpg?v=c73ed17f" alt="Construction neuve" loading="lazy" />
           <div class="pf-item__caption">
             <span class="pf-item__cat">Construction neuve</span>
             <span class="pf-item__title">Enveloppe contemporaine</span>
@@ -2808,7 +2916,7 @@
       </div>
 
       <div class="footer__bottom">
-        <span>© <span id="year">2026</span> Maçonnerie David Deschambault Inc. Tous droits réservés. <a href="https://privacy.maconneriemdd.com" target="_blank" rel="noopener" class="footer__legal">Politique de confidentialité</a></span>
+        <span>© <span id="year">2026</span> Maçonnerie David Deschambault Inc. Tous droits réservés. <a href="/politique-de-confidentialite.html" class="footer__legal">Politique de confidentialité</a> <a href="#" id="cookieSettingsLink" class="footer__legal">Gérer les témoins</a></span>
         <div class="footer__social">
           <a href="https://www.facebook.com/maconneriedaviddeschambault.inc" aria-label="Facebook" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
@@ -2929,6 +3037,146 @@ Merci.`;
     // YEAR
     // =========================================================
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // =========================================================
+    // COOKIECONSENT v3, Configuration
+    // Loi 25 conforme : opt-in explicite, refus aussi visible que l'acceptation
+    // =========================================================
+    window.addEventListener('load', function() {
+      if (typeof CookieConsent === 'undefined') return;
+
+      CookieConsent.run({
+        cookie: {
+          name: 'cc_cookie_mdd',
+          expiresAfterDays: 182
+        },
+
+        guiOptions: {
+          consentModal: {
+            layout: 'box inline',
+            position: 'bottom right',
+            equalWeightButtons: true,
+            flipButtons: false
+          },
+          preferencesModal: {
+            layout: 'box',
+            position: 'right',
+            equalWeightButtons: true,
+            flipButtons: false
+          }
+        },
+
+        onFirstConsent: function() {
+          updateGtagConsent();
+        },
+        onConsent: function() {
+          updateGtagConsent();
+        },
+        onChange: function() {
+          updateGtagConsent();
+        },
+
+        categories: {
+          necessary: {
+            enabled: true,
+            readOnly: true
+          },
+          analytics: {
+            enabled: false,
+            autoClear: {
+              cookies: [
+                { name: /^_ga/ },
+                { name: '_gid' }
+              ]
+            }
+          }
+        },
+
+        language: {
+          default: 'fr',
+          translations: {
+            fr: {
+              consentModal: {
+                title: 'Témoins de connexion',
+                description: 'Nous utilisons des témoins (cookies) pour comprendre comment notre site est consulté et améliorer nos services. Aucun témoin d\'analyse n\'est déposé sans votre consentement explicite. <a href="/politique-de-confidentialite.html">En savoir plus</a>',
+                acceptAllBtn: 'Tout accepter',
+                acceptNecessaryBtn: 'Tout refuser',
+                showPreferencesBtn: 'Gérer mes préférences'
+              },
+              preferencesModal: {
+                title: 'Gérer vos préférences de témoins',
+                acceptAllBtn: 'Tout accepter',
+                acceptNecessaryBtn: 'Tout refuser',
+                savePreferencesBtn: 'Enregistrer mes préférences',
+                closeIconLabel: 'Fermer',
+                sections: [
+                  {
+                    title: 'Vos choix',
+                    description: 'Conformément à la Loi 25 du Québec, vous pouvez accepter ou refuser les témoins non essentiels. Vous pouvez modifier vos préférences en tout temps.'
+                  },
+                  {
+                    title: 'Témoins strictement nécessaires',
+                    description: 'Ces témoins sont indispensables au bon fonctionnement du site. Ils enregistrent notamment vos choix de consentement.',
+                    linkedCategory: 'necessary',
+                    cookieTable: {
+                      headers: { name: 'Nom', domain: 'Domaine', desc: 'Description' },
+                      body: [
+                        {
+                          name: 'cc_cookie_mdd',
+                          domain: 'maconneriemdd.com',
+                          desc: 'Enregistre vos choix de consentement (durée : 6 mois).'
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    title: 'Témoins d\'analyse',
+                    description: 'Ces témoins (Google Analytics) nous permettent de comprendre comment les visiteurs interagissent avec le site, de manière anonyme et agrégée. Aucune donnée n\'est transmise sans votre consentement.',
+                    linkedCategory: 'analytics',
+                    cookieTable: {
+                      headers: { name: 'Nom', domain: 'Domaine', desc: 'Description' },
+                      body: [
+                        {
+                          name: '_ga',
+                          domain: 'maconneriemdd.com',
+                          desc: 'Identifiant anonyme, Google Analytics (durée : 2 ans).'
+                        },
+                        {
+                          name: '_ga_*',
+                          domain: 'maconneriemdd.com',
+                          desc: 'Identifiant de session, Google Analytics 4 (durée : 2 ans).'
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    title: 'Pour aller plus loin',
+                    description: 'Pour plus de détails sur la collecte et l\'utilisation de vos données, consultez notre <a href="/politique-de-confidentialite.html">politique de confidentialité</a>.'
+                  }
+                ]
+              }
+            }
+          }
+        }
+      });
+
+      // Met à jour Google Consent Mode v2 selon les choix
+      function updateGtagConsent() {
+        const analyticsConsent = CookieConsent.acceptedCategory('analytics');
+        gtag('consent', 'update', {
+          'analytics_storage': analyticsConsent ? 'granted' : 'denied'
+        });
+      }
+
+      // Lien "Gérer les témoins" du pied de page
+      const cookieLink = document.getElementById('cookieSettingsLink');
+      if (cookieLink) {
+        cookieLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          CookieConsent.showPreferences();
+        });
+      }
+    });
   </script>
 
 </body>
